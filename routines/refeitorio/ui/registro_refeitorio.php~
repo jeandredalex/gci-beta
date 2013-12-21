@@ -1,0 +1,79 @@
+<!-- PLUGINS -->
+<!-- label -->
+<script src="plugin/label/label.js"></script>
+
+<!-- tooltip -->
+<script src="plugin/tooltip/tooltip.js"></script>
+<link  href="plugin/tooltip/tooltip.css" type="text/css" rel="stylesheet" />
+
+<!-- reveal -->
+<script src="plugin/shortcut/shortcut.js"></script>
+
+<!-- shrotcut -->
+<script src="plugin/reveal/reveal.js"></script>
+<link  href="plugin/reveal/reveal.css" type="text/css" rel="stylesheet" />
+
+<!-- MÓDULES -->
+<!-- taskBar -->
+<script src="mod/taskBar/taskBar.js"></script>
+<link  href="mod/taskBar/taskBar.css" type="text/css" rel="stylesheet" />
+
+<!-- PHP -->
+<!-- limitador_caracteres -->
+<?php include '../../../php/limitador_caracteres.php'; ?>
+
+<!-- ESPECÍFICO DA UI -->
+<!-- registro_refeitorio -->
+<link type="text/css" href="routines/refeitorio/css/registro_refeitorio/registro_refeitorio.css" rel="stylesheet" />
+
+<!-- início da tela de registro de acesso ao refeitório -->
+<div class="modulo">
+	<div class="moduloContent">
+		<div class="espaco_maximo">
+		
+		<div class="refeitorio t620">
+		
+			<img class="logo" src="routines/refeitorio/images/registro_refeitorio/refeitorio_logo.png" />
+		
+			<input type="text" class="matricula" id="matricula" />
+			
+			<div class="submeter pointer" id="submeter">ENTRAR</div>
+			
+			<script type="text/javascript">
+				shortcut.add("Enter",function(){
+				
+					$.ajax({
+						url : 'routines/refeitorio/php/registro_refeitorio/registro_refeitorio_processamento.php',
+						type : 'POST',
+						data : 'matricula=' + $('#matricula').val(),
+							success: function(data){
+								$('.resultado .position').html(data);
+								$('.resultado').removeClass('aguardando').addClass('autorizado');
+								$('#matricula').val('');
+								
+								setTimeout(function() {
+									$('.resultado .position').html('AGUARDANDO ENTRADA');
+									$('.resultado').removeClass('autorizado').addClass('aguardando');
+								}, 3000);
+								
+						}
+					});
+					
+				});
+				
+				$('#matricula').focus();
+			</script>
+			
+		</div><!-- .refeitorio -->
+		
+		<div class="resultado aguardando">
+			<div class="t620">
+				<div class="position font36 marginTop100">AGUARDANDO ENTRADA</div>
+			</div>
+		</div>
+			
+		
+		</div><!-- .espaco_maximo -->
+		
+	</div><!-- .moduloContent -->
+</div><!-- .modulo -->

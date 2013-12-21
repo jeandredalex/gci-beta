@@ -1,0 +1,101 @@
+/*
+códigos de estilos para display
+
+tipo: listagem
+modelo: 1
+data de criação: 25/11/2013 13:40
+*/
+ 
+/* 
+declarações globais
+*/
+.marginRight5{
+	margin-right:5px;
+}
+.marginLeft5{
+	margin-left:5px;
+}
+
+/*
+aparência
+*/
+.listagem{
+	border:3px solid #EEEEEE;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	padding-right:2px; /* faz aparecer a borda do lado direito da listagem */
+}
+.listagem .cabecalho{
+	width:100%;
+	height:30px;
+	background:url('../../images/central_colaboradores/listagem/background.png') repeat-x;
+	border:1px solid #9DB3C7;
+	float:left;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+}
+.listagem .cabecalho .secao{
+	float:left;
+	margin:7px 0 0 10px;
+	color:#1C456B;
+	text-align:left;
+}
+.listagem .item{
+	width:100%;
+	height:30px;
+	border-left:1px solid #9DB3C7;
+	border-right:1px solid #9DB3C7;
+	border-bottom:1px solid #9DB3C7;
+	float:left;
+	position:relative;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+}
+.listagem .item:hover{
+	background:#F9FBFC;
+	border-left:1px solid #9DB3C7;
+	border-right:1px solid #9DB3C7;
+}
+.listagem .info{
+	float:left;
+	margin:7px 0 0 10px;
+	text-align:left;
+	color:#606062;
+}
+.listagem .info .textoPuro{
+	margin-top:2px;
+	float:left;
+}
+.listagem .info .img{
+	margin-top:-2px;
+	float:left;
+}
+
+/*
+personalização: tr_transoeste
+data de criação: 25/11/2013 13:42
+*/
+.campo1{
+	width:20px;
+}
+.campo2{
+	width:65px;
+}
+.campo3{
+	width:310px;
+}
+.campo4{
+	width:110px;
+}
+.campo5{
+	width:140px;
+}
+.campo6{
+	width:200px;
+}
+.campo7{
+	width:100px;
+}

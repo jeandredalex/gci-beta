@@ -1,0 +1,108 @@
+/*
+códigos de estilos para display
+
+tipo: rotina de registro de acesso ao refeitório
+modelo: 1
+data de criação: 29/11/2013 21:02
+*/
+ 
+/* 
+declarações globais
+*/
+.font24{
+	font-size:24px;
+}
+.font30{
+	font-size:30px;
+}
+.font36{
+	font-size:36px;
+}
+.marginTop10{
+	margin-top:10px;
+}
+.marginTop20{
+	margin-top:20px;
+}
+.marginTop25{
+	margin-top:25px;
+}
+.marginTop35{
+	margin-top:35px;
+}
+.marginTop45{
+	margin-top:45px;
+}
+
+
+/*
+aparência
+*/
+.topo_modular .logo{
+	float:left;
+	margin:10px 0 0 2px;
+}
+.refeitorio{
+}
+
+.refeitorio .matriculaBox{
+	width:620px;
+	text-align:left;
+	color:#96989A;
+}
+.refeitorio .matricula{
+	width:600px;
+	height:60px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	background:#FAFAFA;
+	border:3px solid #E6E7E8;
+	padding:10px;
+	font-size:55px;
+	text-align:center;
+}
+.refeitorio .matricula:focus{
+	border:3px solid #00AFEF;
+}
+
+.refeitorio .resultado{
+
+}
+.refeitorio .resultado .foto img{
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+.refeitorio .resultado .nome{
+	width:800px;
+	float:left;
+	text-align:center;
+}
+.refeitorio .resultado .data_hora{
+	width:800px;
+	float:left;
+	text-align:center;
+}
+
+.refeitorio .resultado .mensagem{
+	width:100%;
+	padding:10px 0;
+	float:left;
+	text-align:center;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+}
+.refeitorio .resultado .auth{
+	background:#DDFFDD;
+}
+.refeitorio .resultado .denied{
+	background:#FFDDDD;
+}
+
+
+/*
+personalização: tr_transoeste
+data de criação: 25/11/2013 13:42
+*/

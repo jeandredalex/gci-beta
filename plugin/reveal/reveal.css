@@ -1,0 +1,58 @@
+/* estilos de janela modal */
+.reveal-modal-bg {
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #d0d0d0;
+	background: rgba(0,0,0,.1);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+}
+
+.reveal-modal-1024 {
+	visibility: hidden;
+	top: 55px; 
+	left: 50%;
+	margin-left: -512px;
+	width: 1026px;
+	background: #FFFFFF;
+	position: absolute;
+	z-index: 101;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+.reveal-modal-1024 .close-reveal-modal {
+	font-size: 22px;
+	line-height: .5;
+	position: absolute;
+	top: 8px;
+	right: 11px;
+	color: #aaa;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/* janela 1020 */
+.modalTop1020{
+	width:1026px;
+	height:40px;
+	border-bottom:3px solid #D0D0D0;
+}
+.modalContent1020{
+	width:1026px;
+	float:left;
+	padding-bottom:15px;
+}
+.modalBottom1020{
+	width:1026px;
+	height:60px;
+	border-top:1px solid #D0D0D0;
+	float:left;
+}

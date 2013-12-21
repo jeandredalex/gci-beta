@@ -1,0 +1,98 @@
+/*
+códigos de estilos para display
+
+tipo: listagem
+modelo: 1
+data de criação: 25/11/2013 13:40
+*/
+ 
+/* 
+declarações globais
+*/
+.marginRight5{
+	margin-right:5px;
+}
+.marginLeft5{
+	margin-left:5px;
+}
+
+/*
+aparência
+*/
+.listagem{
+	border:3px solid #EEEEEE;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	padding-right:2px; /* faz aparecer a borda do lado direito da listagem */
+}
+.listagem .cabecalho{
+	width:100%;
+	height:30px;
+	background:url('../../images/solicitacao_compras/listagem/background.png') repeat-x;
+	border:1px solid #9DB3C7;
+	float:left;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+}
+.listagem .cabecalho .secao{
+	float:left;
+	margin:7px 0 0 10px;
+	color:#1C456B;
+	text-align:left;
+}
+.listagem .item{
+	width:100%;
+	height:30px;
+	border-left:1px solid #9DB3C7;
+	border-right:1px solid #9DB3C7;
+	border-bottom:1px solid #9DB3C7;
+	float:left;
+	position:relative;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+}
+.listagem .item:hover{
+	background:#FFFFF0;
+	border-left:1px solid #9DB3C7;
+	border-right:1px solid #9DB3C7;
+}
+.listagem .info{
+	float:left;
+	margin:7px 0 0 10px;
+	text-align:left;
+	color:#606062;
+}
+.listagem .info .textoPuro{
+	margin-top:2px;
+	float:left;
+}
+.listagem .info .img{
+	margin-top:-2px;
+	float:left;
+}
+
+/*
+personalização: tr_transoeste
+data de criação: 25/11/2013 13:42
+*/
+.status{
+	width:20px;
+}
+.qtde{
+	width:60px;
+}
+.produto{
+	width:550px;
+}
+.nome_comprador{
+	width:165px;
+}
+.ultima_alteracao{
+	width:110px;
+}
+.acoes{
+	width:100px;
+}

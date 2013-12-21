@@ -1,0 +1,8 @@
+Códigos de erro do sistema
+========
+
+
+Errno: 1
+Nome: ERRO AO REGISTRAR ACESSO
+Arquivo: routines/refeitorio/php/refeitorio_entrada/refeitorio_entrada_processamento.php
+Insere registro de erro? Sim

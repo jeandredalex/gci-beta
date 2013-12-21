@@ -1,0 +1,120 @@
+/*
+códigos de estilos para display
+
+tipo: barra de navegação
+modelo: 1
+data de criação: 25/11/2013 15:55
+*/
+ 
+/* 
+declarações globais
+*/
+.marginTop5{
+	margin-top:5px;
+}
+.marginTop10{
+	margin-top:10px;
+}
+.marginTop20{
+	margin-top:20px;
+}
+
+/*
+aparência
+*/
+.right{
+	right:375px;
+}
+.barra_navegacao{
+	height:100%;
+	position:fixed;
+	top:100px;
+	background:#FFFFFF;
+	z-index:1;
+}
+
+.barra_navegacao .expandir{
+	float:left;
+	margin-top:5px;
+	margin-left:3px;
+}
+
+.barra_navegacao .sideMark{
+	width:3px;
+	height:35px;
+	background:#B0580E;
+	border-radius:0 2px 2px 0;
+	-webkit-border-radius:0 2px 2px 0;
+	-moz-border-radius:0 2px 2px 0;
+	float:right;
+}
+
+.barra_navegacao .separador{
+	width:90%;
+	height:5px;
+	background:url('images/separador.png') repeat-x;
+	float:left;
+	margin-left:3px;
+}
+
+.barra_navegacao .borderLeft{
+	width:12px;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:url('images/inside.png') repeat-y;
+	z-index:-1;
+}
+.barra_navegacao .borderLeft_outside{
+	width:30px;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:-30px;
+	background:url('images/outside.png') repeat-y;
+	z-index:-1;
+}
+
+.barra_navegacao .optionSelected{
+	height:35px;
+	border-top:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+	border-right:1px solid #EEEEEE;
+	border-radius::0 2px 2px 0;
+	-webkit-border-radius::0 2px 2px 0;
+	-moz-border-radius:0 2px 2px 0;
+	background:#FFFFFF;
+	position:relative;
+	z-index:100;
+}
+
+.barra_navegacao .option{
+	height:35px;
+	z-index:100;
+}
+
+.barra_navegacao .borderBottom{
+	width:98%;
+	height:10px;
+	position:absolute;
+	bottom:-10px;
+	left:3px;
+	background:url('images/button_outside.png') repeat-x;
+	z-index:-1;
+}
+
+.barra_navegacao .icon{
+	float:left;
+	margin:4px 0 0 6px;
+}
+
+.barra_navegacao .nome{
+	float:left;
+	margin:7px 0 0 4px;
+}
+
+/*
+personalização: tr_transoeste
+data de criação: 25/11/2013 13:42
+*/

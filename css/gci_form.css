@@ -1,0 +1,305 @@
+/* reset e configurações */
+*{
+	margin:0 auto;
+	padding:0;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	text-align:center;
+	font-family:bariol, helvetica, helveticaBold;
+}
+
+/* declaração de fontes */
+@font-face {
+    font-family: 'bariol';
+    src: url('../fonts/bariol_regular.eot');
+    src: url('../fonts/bariol_regular.eot') format('embedded-opentype'),
+         url('../fonts/bariol_regular.woff') format('woff'),
+         url('../fonts/bariol_regular.ttf') format('truetype'),
+         url('../fonts/bariol_regular.svg#bariol') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica';
+    src: url('../fonts/helveticathn.eot');
+    src: url('../fonts/helveticathn.eot') format('embedded-opentype'),
+         url('../fonts/helveticathn.woff') format('woff'),
+         url('../fonts/helveticathn.ttf') format('truetype'),
+         url('../fonts/helveticathn.svg#helvetica') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helveticaBold';
+    src: url('../fonts/helveticalt.eot');
+    src: url('../fonts/helveticalt.eot') format('embedded-opentype'),
+         url('../fonts/helveticalt.woff') format('woff'),
+         url('../fonts/helveticalt.ttf') format('truetype'),
+         url('../fonts/helveticalt.svg#helveticaBold') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'impact';
+    src: url('../fonts/impact.eot');
+    src: url('../fonts/impact.eot') format('embedded-opentype'),
+         url('../fonts/impact.woff') format('woff'),
+         url('../fonts/impact.ttf') format('truetype'),
+         url('../fonts/impact.svg#impact') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+
+/* tooltop */
+#tooltip{
+	position:absolute;
+	border:1px solid #333;
+	background:#E6E6E6;
+	padding:2px 5px;
+	color:#333;
+	display:none;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	font-size:13px;
+}
+.tooltip{
+	text-decoration:none;
+	cursor:default;
+}
+
+/* pré definido */
+img{
+	border:none;
+}
+.pointer{
+	cursor:pointer;
+}
+.bold{
+	font-weight:bold;
+}
+.bariol{
+	font-family:helvetica;
+}
+.helvetica{
+	font-family:helvetica;
+}
+.helveticaBold{
+	font-family:helveticaBold;
+}
+.impact{
+	font-family:impact;
+}
+.delimit1024{
+	width:1024px;
+}
+.bgF6F6F6{
+	background:#F6F6F6;
+}
+.color606062{
+	color:#606062;
+}
+
+.font13{
+	font-size:13px;
+}
+.font15{
+	font-size:15px;	
+}
+.font17{
+	font-size:17px;
+}
+
+input{
+	font-family:bariol, helvetica, helveticaBold;
+}
+
+
+
+
+
+/* header */
+#header{
+	width:100%;
+	height:140px;
+	position:fixed;
+}
+#header .top{
+	width:100%;
+	height:60px;
+	background:url('../images/background/top.png') repeat-x;
+}
+#header .top .logo{
+	float:left;
+	margin:4px 0 0 11px;
+}
+#header .bottom{
+	width:100%;
+	height:75px;
+	background:#F1F4F9;
+	position:relative;
+}
+#header .bottom .sep{
+	width:100%;
+	height:5px;
+	background:url('../images/background/bottom_border.png') repeat-x;
+	position:absolute;
+	left:0;
+	bottom:0;
+	z-index:999;
+}
+#header .bottom .appMap{
+	float:left;
+	margin:15px 0 0 25px;
+}
+#header .bottom .appMap .arrowRight{
+	float:left;
+	margin:0 5px;
+}
+#header .bottom .appMap .button{
+	float:left;
+}
+#header .bottom .other{
+	float:right;
+	margin-right:25px;
+}
+#header .bottom .other .button{
+	float:left;
+	margin:15px 0 0 12px;
+}
+
+
+/* menu especial */
+.menuEspecial{
+	width:100%;
+	height:45px;
+	background:#F7F7F8;
+	border-bottom:1px solid #D0D0D0;
+}
+.menuEspecial .botoes{
+	float:right;
+	margin:4px 0 0 0;
+}
+.menuEspecial .buscar{
+	float:left;
+	margin:3px 0 0 0;
+}
+.menuEspecial .buscar input{
+	padding:3px 5px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size:18px;
+}
+.menuEspecial .buscar p{
+	position:relative;
+	float:left;
+	margin-right:5px;
+}
+.menuEspecial .buscar p label{
+	position:absolute;
+	top:8px;
+	left:5px;
+	font-size:17px;
+	color:gray;
+}
+.menuEspecial .buscar .width80{
+	width:80px;
+}
+.menuEspecial .buscar .height{
+	height:26px;
+}
+.menuEspecial .buscar .border{
+	border:2px solid #D0D0D0;
+}
+.menuEspecial .buscar .borderHover{
+	border:2px solid gray
+}
+.menuEspecial .buscar .borderFocused{
+	border:2px solid #0098DA;
+}
+.menuEspecial .buscar .background{
+	background:#FFFFFF;
+}
+.menuEspecial .buscar .backgroundError{
+	background:#F4C9CC;
+}
+
+
+/* ajax */
+#appFlow{
+	width:100%;
+	margin:135px 0 0 0;
+	float:left;
+	height:100%;
+}
+
+/* base de módulo */
+.modulo{
+	width:100%;
+	position:relative;
+}
+.moduloContent{
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+}
+
+/* listagem */
+.listagem{
+	width:100%;
+	margin:10px 0;
+}
+.listagem .cabecalho{
+	width:100%;
+	height:40px;
+	background:url('../images/listagem_header/background.png') repeat-x;
+	border:1px solid #9DB3C7;
+	float:left;
+}
+.listagem .cabecalho .secao{
+	float:left;
+	margin-top:11px;
+	color:#1C456B;
+	font-size:15px;
+}
+.listagem .item{
+	width:100%;
+	height:40px;
+	border-left:1px solid #FFFFFF;
+	border-right:1px solid #FFFFFF;
+	border-bottom:1px solid #9DB3C7;
+	float:left;
+}
+.listagem .item:hover{
+	background:#FFFFBF;
+	border-left:1px solid #9DB3C7;
+	border-right:1px solid #9DB3C7;
+}
+.listagem .info{
+	float:left;
+	margin:10px 0 0 10px;
+	font-size:15px;
+}
+.listagem .action{
+	float:right;
+	margin-top:5px;
+}
+
+
+/* rodapé */
+#footer{
+	width:100%;
+	height:35px;
+	background:#D4D4D3;
+	position:fixed;
+	bottom:0;
+	left:0;
+}

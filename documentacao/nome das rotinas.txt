@@ -1,0 +1,5 @@
+solc1.html
+local: rotinas/compras/tr_transoeste/ui/solc1.html
+ação: exibe o histórico e acompanhamento das solicitações de compras do usuário que está 
+acessando a tela com opção para fazer nova solicitação.
+estrutural: tela de solicitação de compras do módulo de compras, personalizada para tr_transoeste.
